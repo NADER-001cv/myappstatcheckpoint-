@@ -1,6 +1,7 @@
 import  React,{Component}  from 'react';
 import './App.module.css';
 import Time from './Time';
+import ShowProfile from './ShowProfile';
 
 // function App() {
 //   return (
@@ -27,15 +28,16 @@ componentDidUpdate(){
   console.log('componentDidUpdate')
 }
 
-const {name} = this.state;
- function  Handleprofile(){
-  
-    alert("hello" + {name})
+
+
+render(){
+  var   name =  this.state.name ;
+function  Handleprofile(name){
+           
+  return alert("This is me " + name + ".")
 }
-
-  render(){
-
     
+  
        return(
 
 
@@ -57,11 +59,12 @@ const {name} = this.state;
             </div>
           </div>
           <div>
-            <button onChange={this.Handleprofile} style={{ textAlign:'center',marginTop:'20px' }} >
+            <button onClick={Handleprofile(name)} style={{ textAlign:'center',marginTop:'20px' }} >
               show profile
             </button>
           </div>
           <Time   />
+          <ShowProfile />
         </div>
        )
 

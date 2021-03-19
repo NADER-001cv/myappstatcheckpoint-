@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default class Time extends Component {
   state ={
     time : 0 , 
-    name : 'rafik'
+    name : 'nader'
   }
 
   tickHandler = ()=>{
@@ -37,7 +37,7 @@ export default class Time extends Component {
         width:'150px',
         marginLeft:'220px',
         position:'relative',
-        top:'-350px',
+        top:'-300px',
         left:'-150px',
         textAlign:'center',
         padding:'12px',
